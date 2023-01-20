@@ -6,9 +6,11 @@
     var Midterm = ($("#Midterm").val() * .10);
     var FinalExam = ($("#Final").val() * .10);
     var Intex = ($("#Intex").val() * .10);
+
     // adding it all together
     var Final = Assignments + GroupProject + Quizzes + Midterm + FinalExam + Intex;
     console.log(Final)
+
     // output base on condition.
     if (Final >= 94.0) {
         $("#grade").text("Final Grade: A");
