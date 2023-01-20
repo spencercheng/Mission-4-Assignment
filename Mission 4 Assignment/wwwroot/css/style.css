@@ -1,0 +1,21 @@
+﻿.resize {
+    width: 420px;
+    height: 450px;
+    border-radius: 20px;
+}
+.font-redo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.center {
+    text-align: center;
+}
+.line {
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.outer{
+    align-items:center;
+    display: inline;
+}
