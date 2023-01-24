@@ -1,0 +1,46 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!-- Grade Calculator-->
+<h3> Grade in Calculator</h3>
+<p>
+    <i>Input your grade in percentages for each category</i>
+</p>
+<div class="line">
+    <form>
+        <div class="mb-3">
+            <label for="Assignment" class="form-label">Assignments </label>
+            <input type="text" class="form-control" id="assignment" placeholder="95%">
+        </div>
+        <div class="mb-3">
+            <label for="Group Project" class="form-label">Group Project</label>
+            <input type="text" class="form-control" id="GroupProject">
+        </div>
+        <div class="mb-3">
+            <label for="Group Project" class="form-label">Quizzes</label>
+            <input type="text" class="form-control" id="Quizzes">
+        </div>
+        <div class="mb-3">
+            <label for="Group Project" class="form-label">Midterm Exam</label>
+            <input type="text" class="form-control" id="Midterm">
+        </div>
+        <div class="mb-3">
+            <label for="Group Project" class="form-label">Final Exam</label>
+            <input type="text" class="form-control" id="Final">
+        </div>
+        <div class="mb-3">
+            <label for="Group Project" class="form-label">INTEX</label>
+            <input type="text" class="form-control" id="Intex">
+        </div>
+        <div class="col-auto">
+            <input type="button" class="btn btn-primary mb-3" id="send" value="Calculate Grade">
+        </div>
+
+        <p id="grade"></p>
+        <p id="percent"></p>
+    </form>
+</div>
+<script src="~/js/Calculator.js"></script>
