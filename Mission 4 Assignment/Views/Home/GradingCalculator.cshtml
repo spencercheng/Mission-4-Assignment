@@ -14,33 +14,33 @@
         <i>Input your grade in percentages for each category</i>
     </p>
     <div class="line">
-        <form>
+        <form method="post">
             <div class="mb-3">
                 <label for="Assignment" class="form-label">Assignments </label>
-                <input type="text" class="form-control" id="assignment" placeholder="95%" name="Assignment">
+                <input type="text" class="form-control" id="assignment" placeholder="95%" asp-for="Assignment">
             </div>
             <div class="mb-3">
                 <label for="Group Project" class="form-label">Group Project</label>
-                <input type="text" class="form-control" id="GroupProject" name="GroupProject">
+                <input type="text" class="form-control" id="GroupProject" asp-for="GroupProject">
             </div>
             <div class="mb-3">
                 <label for="Quizzes" class="form-label">Quizzes</label>
-                <input type="text" class="form-control" id="Quizzes" name="Quizzes">
+                <input type="text" class="form-control" id="Quizzes" asp-for="Quizzes">
             </div>
             <div class="mb-3">
                 <label for="Midterm Exam" class="form-label">Midterm Exam</label>
-                <input type="text" class="form-control" id="Midterm" name="Midterm">
+                <input type="text" class="form-control" id="Midterm" asp-for="Midterm">
             </div>
             <div class="mb-3">
                 <label for="Final Exam" class="form-label">Final Exam</label>
-                <input type="text" class="form-control" id="Final" name="Final">
+                <input type="text" class="form-control" id="Final" asp-for="Final">
             </div>
             <div class="mb-3">
                 <label for="INTEX" class="form-label">INTEX</label>
-                <input type="text" class="form-control" id="Intex" name="Intex">
+                <input type="text" class="form-control" id="Intex" asp-for="Intex">
             </div>
             <div class="col-auto">
-                <input type="submit" class="btn btn-primary mb-3" id="send" value="Calculate Grade">
+                <input type="submit" class="btn btn-primary mb-3" id="send" value="Calculate Grade" >
             </div>
 
             <div asp-validation-summary="All"></div>

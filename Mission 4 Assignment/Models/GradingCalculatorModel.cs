@@ -8,10 +8,14 @@ namespace Mission_4_Assignment.Models
 {
     public class GradingCalculatorModel
     {
-        public string From { get; set; }
+        [Required]
+        
+        public int Assignment { get; set; }
+        public int GroupProject { get; set; }
+        public int Quizzes { get; set; }
+        public int Midterm { get; set; }
+        public int Final { get; set; }
+        public int Intex { get; set; }
 
-        public string Subject { get; set; }
-
-        public string Message { get; set; }
     }
 }
