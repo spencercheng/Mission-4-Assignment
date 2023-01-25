@@ -4,6 +4,8 @@
 @{
 }
 
+@model Mission_4_Assignment.Models.GradingCalculatorModel;
+
 <!-- Grade Calculator-->
 <div class="container">
     <br /> <br />
@@ -15,32 +17,33 @@
         <form>
             <div class="mb-3">
                 <label for="Assignment" class="form-label">Assignments </label>
-                <input type="text" class="form-control" id="assignment" placeholder="95%">
+                <input type="text" class="form-control" id="assignment" placeholder="95%" name="Assignment">
             </div>
             <div class="mb-3">
                 <label for="Group Project" class="form-label">Group Project</label>
-                <input type="text" class="form-control" id="GroupProject">
+                <input type="text" class="form-control" id="GroupProject" name="GroupProject">
             </div>
             <div class="mb-3">
-                <label for="Group Project" class="form-label">Quizzes</label>
-                <input type="text" class="form-control" id="Quizzes">
+                <label for="Quizzes" class="form-label">Quizzes</label>
+                <input type="text" class="form-control" id="Quizzes" name="Quizzes">
             </div>
             <div class="mb-3">
-                <label for="Group Project" class="form-label">Midterm Exam</label>
-                <input type="text" class="form-control" id="Midterm">
+                <label for="Midterm Exam" class="form-label">Midterm Exam</label>
+                <input type="text" class="form-control" id="Midterm" name="Midterm">
             </div>
             <div class="mb-3">
-                <label for="Group Project" class="form-label">Final Exam</label>
-                <input type="text" class="form-control" id="Final">
+                <label for="Final Exam" class="form-label">Final Exam</label>
+                <input type="text" class="form-control" id="Final" name="Final">
             </div>
             <div class="mb-3">
-                <label for="Group Project" class="form-label">INTEX</label>
-                <input type="text" class="form-control" id="Intex">
+                <label for="INTEX" class="form-label">INTEX</label>
+                <input type="text" class="form-control" id="Intex" name="Intex">
             </div>
             <div class="col-auto">
-                <input type="button" class="btn btn-primary mb-3" id="send" value="Calculate Grade">
+                <input type="submit" class="btn btn-primary mb-3" id="send" value="Calculate Grade">
             </div>
 
+            <div asp-validation-summary="All"></div>
             <p id="grade"></p>
             <p id="percent"></p>
         </form>
